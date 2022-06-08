@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+{% endblock %}
+
+{% block body %}
+    <h1><center>This is First Page</center></h1>
+    <hr>
+    <h4><center>ENTER YOUR EMAIL TO RESET YOUR PASSWORD</center></h4>
+    <form method ="post">
+        {% csrf_token %}
+        <center><input type="text" name="email" placeholder="Your Email"></center><br>
+        <center><input type="submit"></center><br>
+    </form>
+{% endblock %}
