@@ -2,13 +2,15 @@ from django.db import models
 from django import forms
 
 # Create your models here.
-class Email(models.Model):
-    email = models.CharField(max_length=100)
+class Person(models.Model):
+    employee_id = models.IntegerField()
+    card_id = models.IntegerField()
 
-class EmailForm(forms.ModelForm):
+class PersonForm(forms.ModelForm):
     class Meta:
-        model = Email
+        model = Person
         fields = '__all__'
         label = {
-            'email' : 'อีเมล'
+            'employee_id' : 'รหัสพนักงาน',
+            'card_id' : 'เลขบัตรประชาชน',
         }

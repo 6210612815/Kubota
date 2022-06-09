@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+{% endblock %}
+
+{% block body %}
+    <h1><center>Authentication Page</center></h1>
+    <hr>
+    <h2><center>This Is Your Employee ID & Identification Card</center></h2><br>
+    <form method ="post">
+        <table>
+        {% for person in data %}
+        <tr>
+            <td>{{ person.employee_id }}</td>
+            <td>{{ person.card_id }}</td>
+        </tr>
+        {% endfor %}
+        </table>
+    </form>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+{% endblock %}
+
+{% block body %}
+    <h1><center>Authentication Page</center></h1>
+    <hr>
+    <h2><center>Please Enter Information For Reset Your Password</center></h2><br>
+    <form method ="post" action="person_check/">
+        {% csrf_token %}
+        <h4><center>Enter Your Employee ID</center></h4>
+        <center><input type="text" name="employee_id" placeholder="Your Employee ID"></center>
+        <h4><center>Enter Your Identification Card</center></h4>
+        <center><input type="text" name="card_id" placeholder="Your Identification Card"></center><br>
+        <center><input type="submit"></center><br>
+    </form>
+{% endblock %}
