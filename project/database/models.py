@@ -14,3 +14,16 @@ class PersonForm(forms.ModelForm):
             'employee_id' : 'รหัสพนักงาน',
             'card_id' : 'เลขบัตรประชาชน',
         }
+
+class Reset(models.Model):
+    pass_1st = models.IntegerField()
+    pass_2nd = models.IntegerField()
+
+class ResetForm(forms.ModelForm):
+    class Meta:
+        model = Reset
+        fields = '__all__'
+        label = {
+            'pass_1st' : 'รหัสผ่านใหม่',
+            'pass_2nd' : 'ยืนยันรหัสผ่านใหม่',
+        }

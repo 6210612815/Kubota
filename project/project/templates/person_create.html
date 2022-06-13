@@ -8,8 +8,7 @@
 {% block body %}
     <h1><center>Authentication Page</center></h1>
     <hr>
-    <h2><center>Please Enter Information For Reset Your Password</center></h2><br>
-    <form method ="post" action="person_check/">
+    <form method ="post" action="person_created">
         {% csrf_token %}
         <h4><center>Enter Your Employee ID</center></h4>
         <center><input type="text" name="employee_id" placeholder="Your Employee ID"></center>

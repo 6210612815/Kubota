@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+{% endblock %}
+
+{% block body %}
+    <h1><center>Successful Reset Password Page</center></h1>
+    <hr>
+    <h2><center>This Is Your New Password</center></h2><br>
+    <form method ="post">
+        <table>
+        {% for password in data %}
+        <tr>
+            <td>{{ password.pass_1st }}</td>
+            <td>{{ password.pass_2nd }}</td>
+        </tr>
+        {% endfor %}
+        </table>
+    </form>
+{% endblock %}
