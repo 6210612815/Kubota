@@ -21,7 +21,7 @@ numpy==1.22.3
 opencv-python==4.5.5.64
 packaging==21.3
 Pillow==9.1.0
-pipenv==22.4.8
+pipenv==2022.4.8
 platformdirs==2.5.2
 pycparser==2.21
 pyparsing==3.0.7
