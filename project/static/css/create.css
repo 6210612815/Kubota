@@ -4,7 +4,7 @@ body {
 
 .head {
     font-size: 30px;
-    /* font-weight: 600; */
+    font-weight: 600;
     letter-spacing: -1.5px;
 }
 
@@ -13,30 +13,54 @@ body {
     margin: 2rem 0 10px 0;
 }
 
-form {
-    margin-top: 2em;
-    width: 300px;
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-form input {
+.container {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+    width: 425px;
+    height: 481px;
+    background: rgba(245, 245, 245, 0.6);
+    border-radius: 10px;
+    /* max-width: 425px; */
+}
+
+.layout-text-box {
+    position: absolute;
+    width: 343px;
+    height: auto;
+    /* width: 100%; */
+}
+
+form {
+    margin-top: 2em;
     width: 100%;
 }
 
-form input[type="text"] {
+form input {
     border: 2px solid var(--main-green-color);
     padding: 10px 10px;
-    /* width: 100%; */
+    width: 100%;
     margin-top: 10px;
+    box-sizing: border-box;
 }
 
-form input[type="submit"] {
+form button {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 13px;
     letter-spacing: .4px;
-
     padding: 10px 0px;
-    /* width: 100%; */
+    width: 100%;
 
     cursor: pointer;
     background: var(--main-green-color);
@@ -49,5 +73,10 @@ form input[type="submit"] {
 
 small {
     color: var(--text-grey-color);
-    font-size: 12px;
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        background: none;
+    }
 }

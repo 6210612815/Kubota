@@ -5,21 +5,23 @@
 
 {% block body %}
     <link rel="stylesheet" href="{% static 'css/create.css' %}">
+    <div class="center-screen">
+        <div class="container">
+            <div class="layout-text-box">
+                <p class="head">Authentication</p>
 
-    <div class="auth">
-        
+                <form method ="post" action="person_created">
+                    {% csrf_token %}
+                    <p class="sec-head">Enter your Employee ID</p>
+                    <small>Please enter your employee ID.</small><br>
+                    <input type="text" name="employee_id" placeholder="">
+                    <p class="sec-head">Enter your Personal ID card number</p>
+                    <small>Please enter your 13-digit ID Card number.</small><br>
+                    <input type="text" name="card_id" placeholder=""><br>
+                    <button type="submit">ENTER</button>
+                </form>
+            </div>
+        </div>
     </div>
-
-    <p class="head">Authentication</p>
-
-    <form method ="post" action="person_created">
-        {% csrf_token %}
-        <p class="sec-head">Enter your Employee ID</p>
-        <small>Please enter your employee ID.</small><br>
-        <input type="text" name="employee_id" placeholder="">
-        <p class="sec-head">Enter your Personal ID card number</p>
-        <small>Please enter your 13-digit ID Card number.</small><br>
-        <input type="text" name="card_id" placeholder=""><br>
-        <input type="submit" value="ENTER">
-    </form>
+    
 {% endblock %}

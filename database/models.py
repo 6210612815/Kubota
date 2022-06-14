@@ -16,8 +16,8 @@ class PersonForm(forms.ModelForm):
         }
 
 class Reset(models.Model):
-    pass_1st = models.IntegerField()
-    pass_2nd = models.IntegerField()
+    pass_1st = models.CharField(max_length=100)
+    pass_2nd = models.CharField(max_length=100)
 
 class ResetForm(forms.ModelForm):
     class Meta:
