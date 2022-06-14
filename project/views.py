@@ -2,6 +2,9 @@ from django.shortcuts import render
 from .forms import PersonForm, ResetForm
 from database.models import Person, PersonForm, Reset, ResetForm
 
+def index(request):
+    return render(request, 'person_create.html')
+
 # หน้ากรอก รหัสพนักงาน
 def person_create(request): 
     if request.method == "POST":
