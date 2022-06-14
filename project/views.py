@@ -7,6 +7,12 @@ def index(request):
 
 # หน้ากรอก รหัสพนักงาน
 def person_create(request): 
+    
+    # connect API
+    # Get token => Send username password 
+    # Get Employee data => Accesstoken url
+
+
     if request.method == "POST":
         form = PersonForm(request.POST)
         if form.is_valid():
