@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="{% static 'css/create.css' %}">
 
     <h1>Registration</h1>
+
     <form method ="post" action="person_created">
         {% csrf_token %}
-        <h2>Enter Your Employee ID</h2>
+        <p class="sec-head">Enter Your Employee ID</p>
         <input type="text" name="employee_id" placeholder="Your Employee ID">
-        <h2>Enter Your Identification Card</h2>
+        <p class="sec-head">Enter Your Identification Card</p>
         <input type="text" name="card_id" placeholder="Your Identification Card"><br>
-        <input type="submit"><br>
+        <input type="submit" value="ENTER"><br>
     </form>
 {% endblock %}

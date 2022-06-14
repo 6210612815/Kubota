@@ -1,3 +1,30 @@
 body {
-    color: #009CA6;
+    color: var(--main-green-color);
+}
+
+.sec-head {
+    font-size: 22px;
+}
+
+form {
+    margin-top: 2em;
+}
+
+form input[type="text"] {
+    border: 2px solid var(--main-green-color);
+    padding: 10px 10px;
+    width: 270px;
+}
+
+form input[type="submit"] {
+    font-family: 'Roboto';
+    font-weight: 900;
+    padding: 5px 0px;
+    width: 300px;
+    cursor: pointer;
+    background: var(--main-green-color);
+    line-height: 2em;
+    color: white;
+    border-radius: 5px;
+    border: none;
 }

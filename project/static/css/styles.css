@@ -1,3 +1,7 @@
-h4{
-    color: blue
+:root {
+    --main-green-color: #009CA6;
+  }
+
+body {
+    font-family: 'Comfortaa', cursive;
 }
