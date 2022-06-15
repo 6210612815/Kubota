@@ -1,6 +1,6 @@
 body {
     color: var(--main-green-color);
-    background: url(/project/static/image/bg1.png) no-repeat;
+    background: url(/project/static/image/bg2.png) no-repeat;
     background-size: cover;
 }
 
@@ -28,10 +28,11 @@ body {
     margin: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 
     width: 425px;
-    height: auto;
-    /* height: 481px; */
+    height: 481px;
     background: rgba(245, 245, 245, 0.6);
     border-radius: 10px;
 }
@@ -40,8 +41,6 @@ body {
     position: relative;
     width: 343px;
     height: auto;
-    margin-bottom: 3rem;
-    /* margin-top: 2rem; */
 }
 
 form {
@@ -85,7 +84,6 @@ small {
     }
     .container {
         /* background: none; */
-        height: auto;
     }
     .layout-text-box {
         height: auto;

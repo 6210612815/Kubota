@@ -1,19 +1,16 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block style %}
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-{% endblock %}
-
 {% block body %}
-    <link rel="stylesheet" href="{% static 'css/create.css' %}">
+    <link rel="stylesheet" href="{% static 'css/created.css' %}">
 
     <div class="center-screen">
         <div class="container">
             <div class="layout-text-box">
-                <p class="head">Hello, </p>
+                <img src="/project/static/image/person.png" alt="" class="img">
     
-                <!-- <p class="sec-head">This Is Your Employee ID & Identification Card</p> -->
+                <p class="head">Hello, Sittichok</p>
+
                 <form method ="post">
                     <table>
                     {% for person in data %}

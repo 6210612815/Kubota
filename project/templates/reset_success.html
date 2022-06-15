@@ -1,15 +1,21 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block style %}
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-{% endblock %}
-
 {% block body %}
-    <h1><center>Successful Reset Password Page</center></h1>
-    <hr>
-    <h2><center>This Is Your New Password</center></h2><br>
-    <form method ="post">
+    <link rel="stylesheet" href="{% static 'css/success.css' %}">
+
+    <div class="center-screen">
+        <div class="container">
+            <div class="layout-text-box">
+                <p class="head">Success!</p>
+
+                <img src="/project/static/image/success.png" alt="">
+
+                <p class="third-head" style="color: black;">Your password has been changed.</p>
+            </div>
+        </div>
+    </div>
+    <!-- <form method ="post">
         <table>
         {% for password in data %}
         <tr>
@@ -18,5 +24,5 @@
         </tr>
         {% endfor %}
         </table>
-    </form>
+    </form> -->
 {% endblock %}

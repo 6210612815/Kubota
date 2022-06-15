@@ -1,6 +1,6 @@
 body {
     color: var(--main-green-color);
-    background: url(/project/static/image/bg1.png) no-repeat;
+    background: url(/project/static/image/bg2.png) no-repeat;
     background-size: cover;
 }
 
@@ -12,6 +12,11 @@ body {
 
 .sec-head {
     font-size: 22px;
+    margin: 2rem 0 10px 0;
+}
+
+.third-head {
+    font-size: 18px;
     margin: 2rem 0 10px 0;
 }
 
@@ -28,10 +33,12 @@ body {
     margin: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 
-    width: 425px;
-    height: auto;
+    width: 400px;
     /* height: 481px; */
+    height: auto;
     background: rgba(245, 245, 245, 0.6);
     border-radius: 10px;
 }
@@ -40,8 +47,8 @@ body {
     position: relative;
     width: 343px;
     height: auto;
-    margin-bottom: 3rem;
-    /* margin-top: 2rem; */
+    margin-bottom: 2rem;
+    /* margin-top: 1rem; */
 }
 
 form {
@@ -85,10 +92,9 @@ small {
     }
     .container {
         /* background: none; */
-        height: auto;
     }
     .layout-text-box {
         height: auto;
-        margin: 10px 20px;
+        margin: 0 20px 10px 20px;
     }
 }
