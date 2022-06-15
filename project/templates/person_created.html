@@ -6,17 +6,28 @@
 {% endblock %}
 
 {% block body %}
-    <h1><center>Authentication Page</center></h1>
-    <hr>
-    <h2><center>This Is Your Employee ID & Identification Card</center></h2><br>
-    <form method ="post">
-        <table>
-        {% for person in data %}
-        <tr>
-            <td>{{ person.employee_id }}</td>
-            <td>{{ person.card_id }}</td>
-        </tr>
-        {% endfor %}
-        </table>
-    </form>
+    <link rel="stylesheet" href="{% static 'css/create.css' %}">
+
+    <div class="center-screen">
+        <div class="container">
+            <div class="layout-text-box">
+                <p class="head">Hello, </p>
+    
+                <!-- <p class="sec-head">This Is Your Employee ID & Identification Card</p> -->
+                <form method ="post">
+                    <table>
+                    {% for person in data %}
+                    <tr>
+                        <td>{{ person.employee_id }}</td>
+                        <td>{{ person.card_id }}</td>
+                    </tr>
+                    {% endfor %}
+                    </table>
+                </form>
+
+                <button class="btn" type="submit">NEXT</button>
+            </div>
+        </div>
+    </div>
+    
 {% endblock %}

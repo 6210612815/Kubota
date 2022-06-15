@@ -5,6 +5,7 @@
 
 {% block body %}
     <link rel="stylesheet" href="{% static 'css/create.css' %}">
+
     <div class="center-screen">
         <div class="container">
             <div class="layout-text-box">
@@ -14,11 +15,11 @@
                     {% csrf_token %}
                     <p class="sec-head">Enter your Employee ID</p>
                     <small>Please enter your employee ID.</small><br>
-                    <input type="text" name="employee_id" placeholder="">
+                    <input class="input-box" type="text" name="employee_id" placeholder="">
                     <p class="sec-head">Enter your Personal ID card number</p>
                     <small>Please enter your 13-digit ID Card number.</small><br>
-                    <input type="text" name="card_id" placeholder=""><br>
-                    <button type="submit">ENTER</button>
+                    <input class="input-box" type="text" name="card_id" placeholder=""><br>
+                    <button class="btn" type="submit">ENTER</button>
                 </form>
             </div>
         </div>

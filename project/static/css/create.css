@@ -31,14 +31,12 @@ body {
     height: 481px;
     background: rgba(245, 245, 245, 0.6);
     border-radius: 10px;
-    /* max-width: 425px; */
 }
 
 .layout-text-box {
-    position: absolute;
+    position: relative;
     width: 343px;
     height: auto;
-    /* width: 100%; */
 }
 
 form {
@@ -46,7 +44,7 @@ form {
     width: 100%;
 }
 
-form input {
+.input-box {
     border: 2px solid var(--main-green-color);
     padding: 10px 10px;
     width: 100%;
@@ -54,7 +52,7 @@ form input {
     box-sizing: border-box;
 }
 
-form button {
+.btn {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 13px;
@@ -75,8 +73,16 @@ small {
     color: var(--text-grey-color);
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 425px),(max-height: 481px) {
+    body {
+        overflow: visible;
+        margin: none;
+    }
     .container {
         background: none;
+        height: auto;
+    }
+    .layout-text-box {
+        height: auto;
     }
 }
